@@ -63,6 +63,7 @@ Frontend displays feedback → shows score, total, and motivational message.
 
 
 🪄 How to Run Locally
+
 1️⃣ Clone the repository
 git clone https://github.com/your-username/quiz-app.git
 cd quiz-app
