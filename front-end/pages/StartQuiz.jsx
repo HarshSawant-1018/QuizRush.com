@@ -18,7 +18,7 @@ const StartQuiz = ({ resultData, setResultData }) => {
     console.log("first");
     try {
       const response = await fetch(
-        "http://localhost:3000/api/getQuestions/68e2ac8ffa225ed904d3bd9a"
+        "http://quizrush-com.onrender.com/api/getQuestions/68e2ac8ffa225ed904d3bd9a"
       );
       if (!response.ok) throw new Error("Failed to fetch quiz data");
 
@@ -42,7 +42,7 @@ const StartQuiz = ({ resultData, setResultData }) => {
       );
 
       const response = await fetch(
-        "http://localhost:3000/api/getResult/68e2ac8ffa225ed904d3bd9a",
+        "http://quizrush-com.onrender.com/api/getResult/68e2ac8ffa225ed904d3bd9a",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
