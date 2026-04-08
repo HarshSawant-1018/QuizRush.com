@@ -9,7 +9,12 @@ const quizRoutes = require("./routes/quizRoutes")
 
 
 app.use(cors({
-  origin: "https://quiz-rush-pxdwaw895-harsh-s-projects-c290d6c2.vercel.app"
+  origin: [
+    "https://quiz-rush-com-three.vercel.app",
+    "https://quiz-rush-pxdwaw895-harsh-s-projects-c290d6c2.vercel.app"
+  ],
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
 }));
 connectDB();
 
