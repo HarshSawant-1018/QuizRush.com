@@ -7,8 +7,9 @@ const connectDB = require("./Config")
 
 const quizRoutes = require("./routes/quizRoutes")
 
-app.use(cors())
-
+app.use(cors({
+  origin: "*"
+}));
 app.use(express.json());
 connectDB();
 
