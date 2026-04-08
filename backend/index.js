@@ -8,9 +8,10 @@ const connectDB = require("./Config")
 const quizRoutes = require("./routes/quizRoutes")
 
 app.use(cors({
-  origin: "*"
+  origin: "https://quiz-rush-pxdwaw895-harsh-s-projects-c290d6c2.vercel.app",
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
 }));
-app.use(express.json());
 connectDB();
 
 app.use("/api",quizRoutes);
